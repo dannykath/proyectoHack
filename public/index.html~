@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+<title>Mapas de Ciudades de  Peru </title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:20; padding:20; }
+  #map { position:absolute; top:20; bottom:20; width:70%;height: 50% }
+
+</style>
+</head>
+<body>
+<div>
+<h1>Ciudades de Peru</h1>
+</div>
+
+<div id='map'></div>
+
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGFubnlrYXRoIiwiYSI6InpQVFR4YnMifQ.75RM0RQILiSouwaJvaIq3g';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([-13.1650, -74.21], 15);
+</script>
+
+
+
+
+
+</body>
+</html>
+
